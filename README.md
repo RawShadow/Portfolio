@@ -36,7 +36,9 @@ Personal portfolio website showcasing my projects, skills, education, achievemen
 Portfolio/
 ├── index.html
 ├── style.css
-└── arnavj.png
+├── script.js
+├── arnavj.png
+└── README.md
 ```
 
 ## 👨‍💻 Author

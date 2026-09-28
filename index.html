@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Arnav Jaiswal, CS & AI student at Scaler School of Technology.">
 <title>Arnav Jaiswal | Portfolio</title>
+<link rel="icon" type="image/png" href="arnavj.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -14,16 +19,17 @@
 <!-- Navbar -->
 <header class="sticky top-0 bg-[#FAFAF7]/90 backdrop-blur z-50 border-b border-gray-200">
   <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="font-bold text-xl">A<span class="text-orange-500">J</span></div>
+    <a href="#top" class="font-bold text-xl">A<span class="text-orange-600">J</span></a>
     <div class="flex gap-5 text-sm">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" class="hover:text-orange-600 transition">About</a>
+      <a href="#skills" class="hover:text-orange-600 transition">Skills</a>
+      <a href="#projects" class="hover:text-orange-600 transition">Projects</a>
+      <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
     </div>
   </nav>
-  <link rel="icon" type="image/jpeg" href="arnavj.png">
 </header>
+
+<main id="top">
 
 <!-- Hero Section -->
 <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
@@ -31,53 +37,29 @@
   <div class="flex-1">
     <h1 class="hero-name">Arnav<br>Jaiswal</h1>
 
-    <p class="text-orange-500 text-2xl font-semibold mt-3">CS & AI Student</p>
+    <p class="text-orange-600 text-2xl font-semibold mt-3">CS & AI Student</p>
     <p class="text-gray-500 mt-2">📍 Lucknow, Uttar Pradesh</p>
-    <p class="mt-5 text-gray-600 max-w-xl leading-relaxed">Building projects, solving DSA problems and exploring AI. Currently pursuing B.Sc. (Hons) in Computer Science & AI at Scaler School of Technology while strengthening my problem-solving skills through competitive programming and real-world projects.</p>
+    <p class="mt-5 text-gray-600 max-w-xl leading-relaxed">Building projects, solving DSA problems and exploring AI. Currently pursuing B.Sc. (Hons) in Computer Science & AI at Scaler School of Technology.</p>
 
-    <a href="#projects" class="inline-block mt-8 px-6 py-3 bg-orange-500 text-white rounded-xl hover:scale-105 transition"> View Projects </a>
+    <div class="flex flex-wrap gap-4 mt-8">
+      <a href="#projects" class="px-6 py-3 bg-orange-600 text-white rounded-xl hover:bg-orange-700 hover:scale-105 transition">View Projects</a>
+      <a href="https://github.com/RawShadow" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-gray-300 rounded-xl hover:border-orange-500 hover:text-orange-600 hover:scale-105 transition">GitHub</a>
+    </div>
   </div>
 
   <!-- Profile Picture -->
   <div class="flex-1 flex justify-center relative">
     <div class="orange-glow"></div>
     <div class="profile-circle">
-      <img src="arnavj.png" alt="Profile Picture">
+      <img src="arnavj.png" alt="Photo of Arnav Jaiswal">
     </div>
   </div>
 
 </section>
 
-<!-- Stuff to highlight -->
-<section class="max-w-6xl mx-auto px-6 pb-20">
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
-    <div>
-      <h3 class="text-4xl font-bold text-orange-500">160+</h3>
-      <p class="text-gray-500 mt-2">Problems Solved</p>
-    </div>
-
-    <div>
-      <h3 class="text-4xl font-bold text-orange-500">6+</h3>
-      <p class="text-gray-500 mt-2">Projects</p>
-    </div>
-
-    <div>
-      <h3 class="text-4xl font-bold text-orange-500">1st</h3>
-      <p class="text-gray-500 mt-2">Year Student</p>
-    </div>
-
-    <div>
-      <h3 class="text-4xl font-bold text-orange-500">CS & AI</h3>
-      <p class="text-gray-500 mt-2">Degree Program</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- About Me  -->
+<!-- About Me -->
 <section id="about" class="section">
-  <h2 class="section-title mb-4">About Me</h2>
+  <h2 class="section-title mb-6">About Me</h2>
   <div class="grid md:grid-cols-2 gap-5">
     <div class="card">
       <h3 class="font-semibold mb-2">Quick Info</h3>
@@ -88,8 +70,8 @@
       <p>📍 Lucknow, India</p>
     </div>
     <div class="card">
-      <h3 class="font-semibold mb-2">Interests</h3>
-      <p>CS & AI student at Scaler School of Technology. I enjoy competitive programming, building developer tools, creating Minecraft projects, and exploring AI systems. Outside tech, I spend time playing Valorant, following Formula 1, and practicing guitar.</p>
+      <h3 class="font-semibold mb-2">A bit about me</h3>
+      <p class="text-gray-600 leading-relaxed">I learn by building: Minecraft servers, Discord bots and small web apps. I enjoy competitive programming, developer tools and exploring how AI systems work.</p>
     </div>
   </div>
 </section>
@@ -97,19 +79,81 @@
 <!-- Skills -->
 <section id="skills" class="section">
   <h2 class="section-title mb-4">Skills</h2>
+
+  <h3 class="group-title">Languages</h3>
   <div class="pill-container">
-    <span class="pill">HTML</span>
-<span class="pill">CSS</span>
-<span class="pill">Java</span>
-<span class="pill">Python</span>
-<span class="pill">DSA</span>
-<span class="pill">GitHub</span>
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" class="skill-icon">HTML</span>
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" class="skill-icon">CSS</span>
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" class="skill-icon">Java</span>
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" class="skill-icon">Python</span>
+  </div>
+
+  <h3 class="group-title">Tools & Concepts</h3>
+  <div class="pill-container">
+    <span class="pill">DSA</span>
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" class="skill-icon">Git</span>
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" class="skill-icon">GitHub</span>
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" class="skill-icon">Tailwind CSS</span>
+  </div>
+
+  <h3 class="group-title">Currently Learning</h3>
+  <div class="pill-container">
+    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" class="skill-icon">C++</span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2 class="section-title mb-6">Projects</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="card">
+      <h3 class="text-xl font-semibold">Minecraft Servers</h3>
+      <p class="mt-3 text-gray-600">
+        Built and managed multiplayer Minecraft communities, configured plugins,
+        handled moderation and maintained server operations.
+      </p>
+      <div class="pill-container mt-4">
+        <span class="pill">Minecraft</span>
+        <span class="pill">Community Management</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="text-xl font-semibold">Discord Bots</h3>
+      <p class="mt-3 text-gray-600">
+        Developed utility and moderation bots for Discord communities to automate
+        repetitive tasks and improve server management.
+      </p>
+      <div class="pill-container mt-4">
+        <span class="pill">Java</span>
+        <span class="pill">Discord</span>
+      </div>
+      <!-- TODO: replace with the exact repo link -->
+      <a href="https://github.com/RawShadow" target="_blank" rel="noopener noreferrer"
+         class="inline-block mt-5 px-4 py-2 text-sm font-semibold border border-gray-300 rounded-lg hover:border-orange-500 hover:text-orange-600 transition">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3 class="text-xl font-semibold">Minecraft Mods</h3>
+      <p class="mt-3 text-gray-600">
+        Made custom Minecraft mods during lockdown, learning how game code and
+        mod tooling work by building things I wanted to play with.
+      </p>
+      <!-- Edit the description to say what your mods actually did, and add tags (e.g. Java) only if true -->
+      <div class="pill-container mt-4">
+        <span class="pill">Minecraft</span>
+        <span class="pill">Modding</span>
+      </div>
+      <p class="mt-5 text-sm text-gray-500">Source code not public</p>
+    </div>
+
   </div>
 </section>
 
 <!-- Education -->
-<section class="section">
-  <h2 class="section-title mb-4">Education</h2>
+<section id="education" class="section">
+  <h2 class="section-title mb-6">Education</h2>
 
   <div class="space-y-5">
 
@@ -130,89 +174,29 @@
   </div>
 </section>
 
-<!-- Projects -->
-<section id="projects" class="section">
-  <h2 class="section-title mb-4">Projects</h2>
-  <div class="grid md:grid-cols-2 gap-6">
-
-  <div class="card">
-    <h3 class="text-xl font-semibold">Minecraft Servers</h3>
-    <p class="mt-3 text-gray-600">
-      Built and managed multiplayer Minecraft communities, configured plugins,
-      handled moderation and maintained server operations.
-    </p>
-
-    <div class="mt-4">
-      <span class="pill">Minecraft</span>
-      <span class="pill">Community Management</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3 class="text-xl font-semibold">Discord Bots</h3>
-    <p class="mt-3 text-gray-600">
-      Developed utility and moderation bots for Discord communities to automate
-      repetitive tasks and improve server management.
-    </p>
-
-    <div class="mt-4">
-      <span class="pill">Java</span>
-      <span class="pill">Discord</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3 class="text-xl font-semibold">Calorie Tracker</h3>
-    <p class="mt-3 text-gray-600">
-      A simple nutrition tracking application focused on monitoring calorie
-      intake and helping users stay consistent with health goals.
-    </p>
-
-    <div class="mt-4">
-      <span class="pill">HTML</span>
-      <span class="pill">CSS</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3 class="text-xl font-semibold">Calculator App</h3>
-    <p class="mt-3 text-gray-600">
-      Built a responsive calculator application capable of performing basic
-      arithmetic operations through a clean user interface.
-    </p>
-
-    <div class="mt-4">
-      <span class="pill">HTML</span>
-      <span class="pill">CSS</span>
-    </div>
-  </div>
-
-</div>
-</section>
-
 <!-- Achievements -->
-<section class="section">
+<section id="achievements" class="section">
   <h2 class="section-title mb-6">Achievements</h2>
 
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
 
     <div class="card text-center">
-      <h3 class="text-3xl font-bold text-orange-500">160+</h3>
+      <h3 class="text-3xl font-bold text-orange-600">160+</h3>
       <p class="mt-2 text-gray-600">Codeforces Problems Solved</p>
     </div>
 
     <div class="card text-center">
-      <h3 class="text-3xl font-bold text-orange-500">10K+</h3>
+      <h3 class="text-3xl font-bold text-orange-600">10K+</h3>
       <p class="mt-2 text-gray-600">Discord Community Members</p>
     </div>
 
     <div class="card text-center">
-      <h3 class="text-3xl font-bold text-orange-500">129+</h3>
+      <h3 class="text-3xl font-bold text-orange-600">129+</h3>
       <p class="mt-2 text-gray-600">Minecraft Server Players</p>
     </div>
 
     <div class="card text-center">
-      <h3 class="text-3xl font-bold text-orange-500">95%</h3>
+      <h3 class="text-3xl font-bold text-orange-600">95%</h3>
       <p class="mt-2 text-gray-600">Class 12 Boards</p>
     </div>
 
@@ -220,12 +204,12 @@
 </section>
 
 <!-- Interests -->
-<section class="section">
-  <h2 class="section-title mb-4">Interests</h2>
+<section id="interests" class="section">
+  <h2 class="section-title mb-6">Interests</h2>
   <div class="pill-container">
     <span class="pill">🎸 Guitar</span>
-    <span class="pill">🎮 Gaming</span>
-    <span class="pill">🏎 F1</span>
+    <span class="pill">🎮 Valorant</span>
+    <span class="pill">🏎 Formula 1</span>
     <span class="pill">🤖 AI</span>
     <span class="pill">🎬 Marvel</span>
     <span class="pill">📺 Anime</span>
@@ -234,36 +218,38 @@
 
 <!-- Contact -->
 <section id="contact" class="section">
-  <h2 class="section-title mb-4">Contact</h2>
+  <h2 class="section-title mb-6">Contact</h2>
   <div class="grid md:grid-cols-2 gap-5">
 
-  <a class="card" href="https://github.com/RawShadow" target="_blank">
-    <h3 class="font-semibold">GitHub</h3>
-    <p class="text-gray-600 mt-2">github.com/RawShadow</p>
-  </a>
+    <a class="card" href="https://github.com/RawShadow" target="_blank" rel="noopener noreferrer">
+      <h3 class="font-semibold">GitHub</h3>
+      <p class="text-gray-600 mt-2">github.com/RawShadow</p>
+    </a>
 
-  <a class="card" href="https://www.linkedin.com/in/arnav-jaiswal-174ab1366/" target="_blank">
-    <h3 class="font-semibold">LinkedIn</h3>
-    <p class="text-gray-600 mt-2">Professional Profile</p>
-  </a>
+    <a class="card" href="https://www.linkedin.com/in/arnav-jaiswal-174ab1366/" target="_blank" rel="noopener noreferrer">
+      <h3 class="font-semibold">LinkedIn</h3>
+      <p class="text-gray-600 mt-2">Professional Profile</p>
+    </a>
 
-  <a class="card" href="https://leetcode.com/u/RxShadow/" target="_blank">
-    <h3 class="font-semibold">LeetCode</h3>
-    <p class="text-gray-600 mt-2">Problem Solving</p>
-  </a>
+    <a class="card" href="https://leetcode.com/u/RxShadow/" target="_blank" rel="noopener noreferrer">
+      <h3 class="font-semibold">LeetCode</h3>
+      <p class="text-gray-600 mt-2">Problem Solving</p>
+    </a>
 
-  <a class="card" href="https://codeforces.com/profile/RxShadow" target="_blank">
-    <h3 class="font-semibold">Codeforces</h3>
-    <p class="text-gray-600 mt-2">Competitive Programming</p>
-  </a>
+    <a class="card" href="https://codeforces.com/profile/RxShadow" target="_blank" rel="noopener noreferrer">
+      <h3 class="font-semibold">Codeforces</h3>
+      <p class="text-gray-600 mt-2">Competitive Programming</p>
+    </a>
 
-  <a class="card md:col-span-2" href="mailto:notarnavjaiswal@gmail.com">
-    <h3 class="font-semibold">Email</h3>
-    <p class="text-gray-600 mt-2">notarnavjaiswal@gmail.com</p>
-  </a>
+    <a class="card md:col-span-2" href="mailto:notarnavjaiswal@gmail.com">
+      <h3 class="font-semibold">Email</h3>
+      <p class="text-gray-600 mt-2">notarnavjaiswal@gmail.com</p>
+    </a>
 
-</div>
+  </div>
 </section>
+
+</main>
 
 <!-- Footer -->
 <footer class="footer">
@@ -271,6 +257,5 @@
   <p class="footer-tech">Built with HTML, CSS & Tailwind CSS</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

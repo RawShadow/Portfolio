@@ -51,3 +51,10 @@ box-shadow:0 25px 50px rgba(0,0,0,.08);
 .pill:hover{transform:translateY(-3px);border-color:#f97316;}
 .footer{text-align:center;padding:3rem 1rem;border-top:1px solid #e5e7eb;margin-top:2rem;color:#6b7280;}
 .footer-tech{margin-top:.5rem;}
+footer{
+    position:relative;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(249,115,22,.12), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(249,115,22,.08), transparent 40%),
+    #fafaf7;
+}
